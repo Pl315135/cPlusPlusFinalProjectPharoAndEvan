@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Evan.cpp" />
+    <ClCompile Include="Go Fish.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Phero.cpp" />
   </ItemGroup>
