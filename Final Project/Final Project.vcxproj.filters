@@ -24,7 +24,11 @@
     <ClCompile Include="Phero.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+
     <ClCompile Include="TicTacToe.cpp">
+
+    <ClCompile Include="Go Fish.cpp">
+
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
