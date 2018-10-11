@@ -119,6 +119,7 @@
     <ClCompile Include="Go Fish.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Phero.cpp" />
+    <ClCompile Include="TicTacToe.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
