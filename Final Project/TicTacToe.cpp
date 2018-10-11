@@ -1,26 +1,27 @@
 #include <string>
 #include <iostream>
+#include <cstdio>
+#include <cstdlib>
 using namespace std;
-char TTT[3][3] = { '1','2','3','4','5','6','7','8','9', };
-void Draw()
-{
-	cout << " Welcome to Tic Tac Toe " << endl;
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << TTT[i][j] << " ";
-		}
-		cout << endl;
-	}
-}
-void input()
-{
-	cout << "press "
-}
 int ticTacToe()
 {
-	Draw();
+	int computerRandomPick; 
+	int computerPick;
+	int playerChoice;
+	bool playerTurn;
+	int gameWin = 3;
+
+	char blockOne = '1';
+	char blockTwo = '2';
+	char blockThree = '3';
+	char blockFour = '4';
+	char blockFive = '5';
+	char blockSix = '6';
+	char blockSeven = '7';
+	char blockEight = '8';
+	char blockNine = '9';
+	int turnFirst; 
+
 	system("pause");
 	return 0;
 }
