@@ -1,4 +1,4 @@
-//Main 
+
 //Authors: Evan J. Raker & Phero Luong
 //Date: 10/8/2018
 #include <iostream>
