@@ -20,7 +20,12 @@ string cardDeck[4][13] = { { "Ace of Spades", "2 of Spades", "3 of Spades", "4 o
 { "Ace of Hearts", "2 of Hearts", "3 of Hearts", "4 of Hearts", "5 of Hearts", "6 of Hearts", "7 of Hearts", "8 of Hearts", "9 of Hearts", "10 of Hearts", "Jack of Hearts", "Queen of Hearts", "King of Hearts" },
 { "Ace of Diamonds", "2 of Diamonds", "3 of Diamonds", "4 of Diamonds", "5 of Diamonds", "6 of Diamonds", "7 of Diamonds", "8 of Diamonds", "9 of Diamonds", "10 of Diamonds", "Jack of Diamonds", "Queen of Diamonds", "King of Diamonds" } };
 
-string hand[52] = {};
+string shuffledDeck[52] = { 0 };
+
+string hand[39] = {};
+
+int turn = 0;
+
 
 int goFish() {
 
@@ -34,22 +39,20 @@ int cardDraw() {
 		srand(time(NULL));
 		randSuit = rand() % 4;
 		randRank = rand() % 13;
-		hand[i] = cardDeck[randSuit][randRank];
-
-		if (hand[i] == "") {
+		
+		if (cardDeck[randSuit][randRank] == "drawn") {
 			i--;
-			hand[i] = "";
 		}
 		else {
+			shuffledDeck[i] = cardDeck[randSuit][randRank];
+			cout << i;
 			cout << hand[i] << endl;
+			cardDeck[randSuit][randRank] = "drawn";
 		}
-
-		cardDeck[randSuit][randRank] == "";
-		sleep_for(seconds(1));
+		
+		//sleep_for(milliseconds(250));
 	}
-
-
-
+	cout << "All cards Drawn";
 	system("pause");
 	return 0;
 }
