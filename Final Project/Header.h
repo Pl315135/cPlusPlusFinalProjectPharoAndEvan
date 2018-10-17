@@ -4,8 +4,9 @@
 #ifndef finalProject
 #define finalProject
 #include <iostream>
+#include <string>
 
-int cardDraw();
+void cardShuffle();
 int goFish();
 
 #endif
