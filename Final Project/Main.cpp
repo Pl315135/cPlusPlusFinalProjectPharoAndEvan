@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
 
-	cardDraw();
+	goFish();
 
 	system("pause");
 	return 0;

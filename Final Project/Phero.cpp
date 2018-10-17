@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int Phero()
+/*int Phero()
 {
 	int turn = 0;
 	cout << " Welcome to Go fish " << endl;
@@ -18,4 +18,4 @@ int Phero()
 //	if ()
 		system("pause");
 	return 0;
-}
+}*/
