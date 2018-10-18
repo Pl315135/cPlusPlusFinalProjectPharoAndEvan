@@ -27,7 +27,7 @@ int turn = 0;
 
 int goFish() {
 
-	rules();
+	//rules();
 
 	cardShuffle();
 
@@ -68,4 +68,6 @@ void cardShuffle() {
 
 	system("pause");
 }
+
+//int playerHand
 	
