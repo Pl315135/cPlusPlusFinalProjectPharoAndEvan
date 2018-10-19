@@ -20,7 +20,9 @@ string cardDeck[4][13] = { { "Ace of Spades", "2 of Spades", "3 of Spades", "4 o
 
 string shuffledDeck[52] = { "" };
 
-string hand[39] = {};
+string playerHand[39] = {};
+
+string botHand[39] = {};
 
 int turn = 0;
 
@@ -69,5 +71,17 @@ void cardShuffle() {
 	system("pause");
 }
 
-//int playerHand
+void drawCard() {
+	for (int i = 0; i <= 51; i++) {
+		shuffledDeck[i]
+	}
+}
+
+void player() {
+
+}
+
+void bot() {
+
+}
 	
