@@ -9,7 +9,10 @@ using namespace std;
 
 int main() {
 
-	goFish();
+	//goFish();
+	//TicTacToe();
+	//cardShuffle();
+	drawCard();
 
 	system("pause");
 	return 0;

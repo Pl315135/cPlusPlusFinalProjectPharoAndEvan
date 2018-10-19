@@ -18,18 +18,25 @@ string cardDeck[4][13] = { { "Ace of Spades", "2 of Spades", "3 of Spades", "4 o
 { "Ace of Hearts", "2 of Hearts", "3 of Hearts", "4 of Hearts", "5 of Hearts", "6 of Hearts", "7 of Hearts", "8 of Hearts", "9 of Hearts", "10 of Hearts", "Jack of Hearts", "Queen of Hearts", "King of Hearts" },
 { "Ace of Diamonds", "2 of Diamonds", "3 of Diamonds", "4 of Diamonds", "5 of Diamonds", "6 of Diamonds", "7 of Diamonds", "8 of Diamonds", "9 of Diamonds", "10 of Diamonds", "Jack of Diamonds", "Queen of Diamonds", "King of Diamonds" } };
 
-string shuffledDeck[52] = { "" };
+string shuffledDeck[52] = { ""};
 
-string hand[39] = {};
+string playerHand[39] = {};
+
+string botHand[39] = {};
 
 int turn = 0;
 
 
 int goFish() {
 
-	rules();
+	//rules();
 
 	cardShuffle();
+
+	for (int i = 0; i <= 6; i++) {
+		drawCard();
+		cout << playerHand[i];
+	}
 
 	system("puase");
 	return 0;
@@ -67,5 +74,39 @@ void cardShuffle() {
 	sleep_for(seconds(1));
 
 	system("pause");
+}
+
+void drawCard() {
+	for (int i = 0; i <= 51; i++) {
+		int x = 0;
+		for (int i = 0; i <= 39; i++) {
+
+			if (playerHand[i] == "") {
+				i = x;
+				i + 39;
+			}
+			else {
+
+			}
+		}
+		
+		if (shuffledDeck[i] == "drawn") {
+			
+		}
+		else {
+			playerHand[x] = shuffledDeck[i];
+			shuffledDeck[i] = "drawn";
+			i + 51;
+		}
+		cout << playerHand[i];
+	}
+}
+
+void player() {
+
+}
+
+void bot() {
+
 }
 	
