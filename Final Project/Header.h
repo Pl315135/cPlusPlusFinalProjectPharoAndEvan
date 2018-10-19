@@ -6,7 +6,9 @@
 #include <iostream>
 #include <string>
 
+
 void cardShuffle();
 int goFish();
+int TicTacToe();
 
 #endif
