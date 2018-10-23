@@ -10,6 +10,7 @@ using namespace std;
 
 void cardShuffle();
 void drawCard();
+void rules();
 
 int goFish();
 

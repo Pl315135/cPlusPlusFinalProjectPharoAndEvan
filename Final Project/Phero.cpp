@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 using namespace std;
 
@@ -10,4 +10,4 @@ void rules()
  cout << " How many people are playing ?  " << endl;
  cout
 
-}
+}*/
