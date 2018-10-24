@@ -6,7 +6,7 @@ using namespace std;
 char TTT[3][3] = { '1','2','3','4','5','6','7','8','9' };
 char player = 'X';
 int a;
-
+// The base
 void Draw()
 {
 
@@ -21,6 +21,7 @@ void Draw()
 	}
 
 }
+// Player's choice of where they want to go on the number field.
 void Input()
 {
 	int choice;

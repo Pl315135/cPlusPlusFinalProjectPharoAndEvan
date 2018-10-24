@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <chrono>
 #include <thread>
-#include <random>
+#include <vector>
 using namespace std;
 using namespace std::chrono;
 using namespace std::this_thread;
@@ -27,7 +27,9 @@ string botHand[39] = {""};
 
 string name;
 
-int turn;
+int turn = 1;
+
+int books = 1;
 
 
 int goFish() {
@@ -49,12 +51,16 @@ int goFish() {
 	pickingOrder();
 	
 	if (turn == 1) {
-		playerTurn();
-		botTurn();
+		do {
+			playerTurn();
+			botTurn();
+		} while (books != 13);
 	}
 	else if (turn == 2) {
-		botTurn();
-		playerTurn();
+		do {
+			botTurn();
+			playerTurn();
+		} while (books != 13);
 	}
 	return 0;
 }
@@ -82,7 +88,7 @@ void cardShuffle() {
 		int card;
 		srand(time(NULL));
 		card = rand() % 52;
-		
+		erase(rand() % 52);
 		
 		if (cardDeck[card] == "drawn") {
 			i--;
@@ -147,7 +153,23 @@ int pickingOrder() {
 
 
 void playerTurn() {
-	cout << "|||Your Turn|||" << endl;
+	char playerRank;
+	cout << "|||Your Turn|||\n\n" << endl;
+
+	cout << "your hand is..."<<endl;
+
+	for (int i = 0; i <= size(playerHand); i++) {
+		if (playerHand[i] == "") {
+
+		}
+		else {
+			cout << playerHand[i]<< " ";
+		}
+	}
+
+	cout << "\nwhat Rank would you Like?";
+	cin >> playerRank;
+	if 
 }
 
 void botTurn() {
