@@ -9,8 +9,12 @@ using namespace std;
 
 
 void cardShuffle();
-void drawCard();
+void playerDrawCard();
+void botDrawCard();
 void rules();
+void playerTurn();
+void botTurn();
+void pickingOrder();
 
 int goFish();
 

@@ -10,7 +10,7 @@ using namespace std;
 int main() {
 	double choice = 0;
 	do {
-		cout << "What game would you like to Play? \n 1 = GoFish, 2 = Tic Tac Toe, 3 = Leave" << endl;
+		cout << "What game would you like to Play? \n 1 = GoFish, 2 = Tic Tac Toe, 3 = Leave ";
 		cin >> choice;
 		if (choice == 1) {
 			goFish();
@@ -19,7 +19,7 @@ int main() {
 			TicTacToe();
 		}
 		else {
-			cout << "That input is not recognized, please try again."<< endl;
+			cout << "That input is not recognized, please try again.\n"<< endl;
 		}
 		
 	} while (choice != 3);
